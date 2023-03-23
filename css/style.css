@@ -215,7 +215,7 @@ header .fa-bars{
     width:20rem;
     border-radius: 5rem;
     background:var(--yellow);
-    color:white;
+    color:rgba(134, 0, 0, 0.8);
     font-size: 2rem;
     cursor: pointer;
     transition: .2s;
@@ -234,6 +234,7 @@ header .fa-bars{
   
   .home .content button:hover{
     background: var(--pink);
+    color: white;
     letter-spacing: .4rem;
   }
   
