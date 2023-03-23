@@ -15,7 +15,6 @@
 *{
     font-family: 'Jost', sans-serif;
     transition: .2s linear;
-    text-transform: capitalize;
     text-decoration: none;
     outline: none;
     margin: 0; padding: 0;
@@ -68,6 +67,7 @@ header{
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, 0.151);
 }  
 header .navbar ul{
+   text-transform: capitalize;
     display: flex;
     align-items: center;
     justify-content: space-between;
