@@ -112,98 +112,10 @@ header .fa-bars{
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    padding-top: 15rem;
+    padding-top: 10rem;
     padding-bottom: 2rem;
     text-align: center;
   }
-  
-  .home .content h1{
-    font-size: 4rem;
-    color: white;
-    margin-top: 1rem;
-    padding:0 1rem;
-    text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
-    text-transform: uppercase;
-  }
-  .home .content .txt_shadows {
-      text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
-        9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-      font-family: jost, sans-serif;
-      font-weight: 900;
-      text-transform: uppercase;
-      font-size: calc(2rem + 3vw);
-      text-align: center;
-      margin: 0;
-      color: var(--color-primary);
-      
-      animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
-      letter-spacing: 0.4rem;
-  }
-
-  @keyframes shadows {
-    0% {
-      text-shadow: none;
-    }
-    10% {
-      text-shadow: 3px 3px 0 var(--color-secondary);
-    }
-    20% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary);
-    }
-    30% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-    }
-    40% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
-        12px 12px 0 var(--color-quinary);
-    }
-    50% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
-        12px 12px 0 var(--color-quinary);
-    }
-    60% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
-        12px 12px 0 var(--color-quinary);
-    }
-    70% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
-    }
-    80% {
-      text-shadow: 3px 3px 0 var(--color-secondary),
-        6px 6px 0 var(--color-tertiary);
-    }
-    90% {
-      text-shadow: 3px 3px 0 var(--color-secondary);
-    }
-    100% {
-      text-shadow: none;
-    }
-  }
-  
-  @keyframes move {
-    0% {
-      transform: translate(0px, 0px);
-    }
-    40% {
-      transform: translate(-12px, -12px);
-    }
-    50% {
-      transform: translate(-12px, -12px);
-    }
-    60% {
-      transform: translate(-12px, -12px);
-    }
-    100% {
-      transform: translate(0px, 0px);
-    }
-  }
-
   .home .content p{
     font-size: calc(.8rem + 1.8vw);
     color:white;
@@ -222,7 +134,15 @@ header .fa-bars{
     border:none;
     box-shadow: 0 .3rem 1rem rgba(0,0,0,.3);
   }
-  .home .content img {
+  .home .content .logo {
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    flex-wrap: wrap;
+  }
+  .home .content .mug {
     height:35rem;
     width:35rem;
     padding: 1rem;
