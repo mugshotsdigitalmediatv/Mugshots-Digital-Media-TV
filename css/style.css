@@ -527,9 +527,18 @@ header .nav-toggle{
     top:5.5rem;
     opacity: 1;
 }
-.home .content img {
+.home .content .logo {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  flex-wrap: wrap;
+}
+.home .content .mug {
   height: 30rem;
   width: auto;
+ 
 }
 .home .content p{
     padding:1.5rem 2rem;
