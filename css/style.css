@@ -2,8 +2,8 @@
 
 :root{
     --yellow:#ffc003;
-    --pink:#f4533f;
-    --red: #c01a04;
+    --pink:#c92711;
+    --red: #fd4346;
     --blue: #233f6e;
 
   --color-primary: #ffc003;
@@ -430,11 +430,11 @@ header .fa-bars{
   }
   
   .team .row .card{
-    height:35rem;
+    height:28rem;
     width:25rem;
     background: var(--yellow);
     text-align: center;
-    margin:7rem 2rem;
+    margin:5rem 1.2rem;
     position: relative;
     overflow: hidden;
     -webkit-box-reflect: below .2rem linear-gradient(transparent 70%, #0004);
@@ -442,12 +442,12 @@ header .fa-bars{
   
   .team .row .card .image{
     margin:1rem 0;
-    padding-top: 4rem;
+    padding-top: 1rem;
   }
   
   .team .row .card .image img{
-    height:13rem;
-    width:13rem;
+    height:16rem;
+    width:16rem;
     border-radius: 50%;
     border:.5rem solid var(--blue);
     box-shadow: 0 0 .5rem rgba(0,0,0,.3);
