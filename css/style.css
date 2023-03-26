@@ -287,21 +287,13 @@ header .fa-bars{
   .events .row .divider{
     padding:0 1rem;
   }
-  .events .row .box-container .image{
-    width:calc(25em + 20vw);
-    height: 50%;
-    margin: auto;
-    border:0.5rem solid var(--yellow);
-    padding-top: 40%;
-  }
-
   .events .row .box-container iframe{
-    object-fit:cover;
+    object-fit:fill;
     border-radius: .5rem;
     border:0.5rem solid var(--yellow);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.9);
-    width:calc(25em + 20vw);
-    height: fit-content;
+    box-shadow: 0 .5rem 1rem rgba(155, 71, 71, 0.9);
+    width:60rem;
+    height: 35rem;
   }
   
   .events .row .box-container .box .info{
@@ -337,7 +329,7 @@ header .fa-bars{
   }
   .about{
     min-height: 100vh;
-    width: 100vw;
+    
     text-align: center;
     padding:0 2rem;
   }
@@ -546,11 +538,11 @@ header .nav-toggle{
 
   .about .row .image iframe{
     width:100%;
-    height: fit-content;
+    height: 25rem;
   }
   .events .row .box-container .box iframe {
     width:100%;
-    height: fit-content;
+    height: 25rem;
   }
   .about .row .accordion-container{
     width:100%;
