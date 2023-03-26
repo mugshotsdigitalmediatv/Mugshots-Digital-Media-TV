@@ -287,20 +287,21 @@ header .fa-bars{
   .events .row .divider{
     padding:0 1rem;
   }
-  .events .row .box-container .box img{
-    height:auto;
-    width:100%;
-    object-fit:cover;
-    border-radius: .5rem;
-    border:0.5rem solid var(--pink);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.9);
+  .events .row .box-container .image{
+    width:calc(25em + 20vw);
+    height: 50%;
+    margin: auto;
+    border:0.5rem solid var(--yellow);
+    padding-top: 40%;
   }
-  .events .row .box-container .box iframe{
-    width: 100%;
+
+  .events .row .box-container iframe{
     object-fit:cover;
     border-radius: .5rem;
-    border:0.5rem solid var(--pink);
+    border:0.5rem solid var(--yellow);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.9);
+    width:calc(25em + 20vw);
+    height: fit-content;
   }
   
   .events .row .box-container .box .info{
@@ -342,18 +343,21 @@ header .fa-bars{
   }
   
   .about .row{
+    padding-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:0 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   
   .about .row .image iframe{
-    object-fit:cover;
+    object-fit:fill;
     border-radius: .5rem;
     border:0.5rem solid var(--yellow);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.9);
-    width:60rem;
+    width:calc(45em + 20vw);
+    height: calc(20rem + 10vw);
   }
   .about .row .accordion-container{
     width: 50%;
@@ -400,12 +404,14 @@ header .fa-bars{
   }
 
   .team{
-    min-height: 90vh;
+    min-height: 100vh;
     width:100vw;
+    padding: 0 .2rem;
     text-align: center;
   }
   
   .team .heading{
+    padding-bottom: 5rem;
     color:var(--pink);
   }
   
@@ -421,16 +427,19 @@ header .fa-bars{
   }
   
   .team .row .card{
-    background: linear-gradient(rgba(255, 255, 255, 0),rgba(251, 255, 29, 0.952));
-    height:33rem;
+    background: linear-gradient(rgba(0, 4, 66, 0.8),rgba(134, 0, 0, 0.8));
+    height:20rem;
     width:25rem;
-    border-bottom-left-radius: 5rem ;
-    border-bottom-right-radius: 5rem ;
+    border-radius: 25% 10% ;
     text-align: center;
     margin:5rem 1.2rem;
     position: relative;
-    overflow:inherit;
-    -webkit-box-reflect: below .2rem linear-gradient(transparent 90%, #0004);
+    
+    overflow: visible;
+    box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }  
   .team .row .card .image img{ 
     margin:1rem 0;
@@ -438,16 +447,20 @@ header .fa-bars{
     width:25rem;
     border-radius: 50%;
     object-fit:cover;
+    border-radius: 50%;
+    transform: translateY(-40%);
+    position: relative;
+    transition: all .3s ease-in-out;
   }
   
-  .team .row .card .info h3{
-    font-size: 2rem;
-    color:var(--pink);
-  }
-  
-  .team .row .card .info span{
-    font-size: 1.8rem;
-    color: rgba(255, 0, 0, 0.432);
+  .team .row .card .info{
+    flex-direction: column;
+    transform: translateY(-280%);
+    align-items: center;
+    gap: .1em;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color:var(--yellow);
   }
 @media (max-width:768px){
 
