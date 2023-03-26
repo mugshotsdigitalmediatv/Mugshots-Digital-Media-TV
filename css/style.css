@@ -421,14 +421,16 @@ header .fa-bars{
   }
   
   .team .row .card{
+    background: linear-gradient(rgba(255, 255, 255, 0),rgba(251, 255, 29, 0.952));
     height:33rem;
     width:25rem;
-    background: linear-gradient(rgba(66, 0, 9, 0.055),rgb(2, 0, 100));
+    border-bottom-left-radius: 5rem ;
+    border-bottom-right-radius: 5rem ;
     text-align: center;
     margin:5rem 1.2rem;
     position: relative;
     overflow:inherit;
-    -webkit-box-reflect: below .2rem linear-gradient(transparent 70%, #0004);
+    -webkit-box-reflect: below .2rem linear-gradient(transparent 90%, #0004);
   }  
   .team .row .card .image img{ 
     margin:1rem 0;
@@ -440,12 +442,12 @@ header .fa-bars{
   
   .team .row .card .info h3{
     font-size: 2rem;
-    color:var(--yellow);
+    color:var(--pink);
   }
   
   .team .row .card .info span{
     font-size: 1.8rem;
-    color: rgba(255, 238, 0, 0.432);
+    color: rgba(255, 0, 0, 0.432);
   }
 @media (max-width:768px){
 
