@@ -454,6 +454,74 @@ header .fa-bars{
     font-size: 1.5rem;
     color:var(--yellow);
   }
+  .contact {
+    background: var(--yellow);
+  }
+  .contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5rem 0;
+  }
+  
+  .contact .row .image img{
+    width: 60rem;
+    height:auto;
+  }
+  
+  .contact .row .form-container{
+    width:100%;
+    padding: 2rem;
+  }
+  
+  .contact .row .form-container input, textarea{
+    height:4rem;
+    width:90%;
+    border:none;
+    padding:0 1rem;
+    margin:1rem 0;
+    color:var(--pink);
+    font-size: 1.7rem;
+    transition: .2s linear;
+
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .contact .row .form-container input:focus, textarea:focus{
+    background-color: var(--red);
+    color: var(--yellow);
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+  
+  .contact .row .form-container textarea{
+    height:20rem;
+    border-radius: 1rem;
+    padding:1rem; 
+    resize: none;
+  }
+  
+  .contact .row .form-container input[type="submit"]{
+    width:17rem;
+    background:var(--pink);
+    color:#fff;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .2s;
+  }
+  
+  .contact .row .form-container input[type="submit"]:hover{
+    background:none;
+    color:var(--pink);
+    border:.2rem solid var(--pink);
+  }
 @media (max-width:768px){
 
 html{
@@ -546,5 +614,19 @@ header .nav-toggle{
   }
   .about .row .accordion-container{
     width:100%;
+  }
+  .contact .row{
+    flex-flow: column;
+  }
+
+  .contact .row .image img{
+    padding:1rem;
+    height:100%;
+    width:90%;
+  }
+
+  .contact .row .form-container{
+    width:90%;
+    padding:1rem;
   }
 }
