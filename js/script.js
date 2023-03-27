@@ -35,3 +35,13 @@ $(document).ready(function(){
       $(this).children('span').text('-');
     });
   });
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwOb7MEOT-EBA9q16GIwWBz_-yfJeOZgL02Vp8cMZwbK39k3PS7vfy7lne6GHgILyBV/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
