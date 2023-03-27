@@ -134,6 +134,11 @@ header .fa-bars{
     border:none;
     box-shadow: 0 .3rem 1rem rgba(0,0,0,.3);
   }
+  .home .content button:hover{
+    background: var(--pink);
+    color: white;
+    letter-spacing: .4rem;
+  }
   .home .content .logo {
     width: 50%;
     padding: 1rem;
@@ -152,11 +157,7 @@ header .fa-bars{
     flex-wrap: wrap;
   }
   
-  .home .content button:hover{
-    background: var(--pink);
-    color: white;
-    letter-spacing: .4rem;
-  }
+  
   
   .home .box-container{
     display: flex;
@@ -470,7 +471,7 @@ header .fa-bars{
   }
   
 
-
+  
   .contact .row .form-container{
     width:100%;
     padding: 2rem;
@@ -490,7 +491,7 @@ header .fa-bars{
     outline: none;
     border-radius: 15px;
     padding: 1em;
-    background-color: #ccc;
+    background-color: var(--blue);
     box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
     transition: 300ms ease-in-out;
   }
@@ -509,24 +510,23 @@ header .fa-bars{
     padding:1rem; 
     resize: none;
   }
-  
-  .contact .row .form-container input[type="submit"]{
-    width:17rem;
-    background:var(--pink);
-    color:#fff;
-    cursor: pointer;
+  .contact .row .form-container button{
+    height:4rem;
+    width:20rem;
+    border-radius: 5rem;
+    background:var(--yellow);
+    color:rgba(134, 0, 0, 0.8);
     font-size: 2rem;
+    cursor: pointer;
     transition: .2s;
+    border:none;
+    box-shadow: 0 .3rem 1rem rgba(0,0,0,.3);
   }
-  
-  .contact .row .form-container input[type="submit"]:hover{
-    background:none;
-    color:var(--pink);
-    border:.2rem solid var(--pink);
+  .contact .row .form-container button:hover{
+    background: var(--pink);
+    color: white;
+    letter-spacing: .4rem;
   }
-
-
-  
 @media (max-width:768px){
 
 html{
