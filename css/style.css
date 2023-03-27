@@ -469,6 +469,8 @@ header .fa-bars{
     height:auto;
   }
   
+
+
   .contact .row .form-container{
     width:100%;
     padding: 2rem;
@@ -480,7 +482,7 @@ header .fa-bars{
     border:none;
     padding:0 1rem;
     margin:1rem 0;
-    color:var(--pink);
+    color:var(--yellow);
     font-size: 1.7rem;
     transition: .2s linear;
 
@@ -522,6 +524,9 @@ header .fa-bars{
     color:var(--pink);
     border:.2rem solid var(--pink);
   }
+
+
+  
 @media (max-width:768px){
 
 html{
