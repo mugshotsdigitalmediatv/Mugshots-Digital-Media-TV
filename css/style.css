@@ -353,7 +353,7 @@ header .fa-bars{
     height: calc(20rem + 10vw);
   }
   .about .row .accordion-container{
-    width: 50%;
+    width: 100%;
     text-align: left;
   }
   
