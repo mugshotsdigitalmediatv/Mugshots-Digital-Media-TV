@@ -612,6 +612,17 @@ header .fa-bars{
   color: #24262b;
   background-color: #ffffff;
 }
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
 @media (max-width:768px){
 
 html{
