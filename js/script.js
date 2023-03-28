@@ -36,7 +36,30 @@ $(document).ready(function(){
     });
   });
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwOb7MEOT-EBA9q16GIwWBz_-yfJeOZgL02Vp8cMZwbK39k3PS7vfy7lne6GHgILyBV/exec'
+  function validate(){
+    var fullname = document.getElementById("fullname").value;
+    var contactnumber = document.getElementById("phone").value;
+    var emailA = document.getElementById("email").value;
+    var messageform = document.getElementById("message").value
+    var text;
+    if(fullname.length < 5){
+      alert("Please Enter valid Name");
+      return false;
+    }
+    if(isNaN(phone) || phone.length <= 8){
+      alert("Please Enter valid Contact Number");
+      return false;
+    }
+    if(email.indexOf("@") == -1 || email.length < 6){
+      alert("Please Enter valid Email");
+      return false;
+    }
+    if(message.length <= 50){
+      alert("Please Enter More Than 50 Characters");
+      return false;
+    }
+    alert("Form Submitted Successfully!");
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwOb7MEOT-EBA9q16GIwWBz_-yfJeOZgL02Vp8cMZwbK39k3PS7vfy7lne6GHgILyBV/exec'
   const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
@@ -45,3 +68,11 @@ $(document).ready(function(){
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
+  fullname.value = " "
+  email.value = " "
+  phone.value = " "
+  message.value = " "
+    return true;
+  }
+
+  
