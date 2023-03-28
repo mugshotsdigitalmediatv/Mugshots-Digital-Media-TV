@@ -466,7 +466,6 @@ header .fa-bars{
   }
   
   .contact .row .image img{
-    margin  : 5rem;
     width: 60rem;
     height:auto;
   }
@@ -475,6 +474,7 @@ header .fa-bars{
   
   .contact .row .form-container{
     width:100%;
+    margin: 3rem;
    
   }
   
@@ -482,24 +482,22 @@ header .fa-bars{
     height:4rem;
     width:100%;
     border:none;
-    padding:0 1rem;
-    margin:1rem 0;
-    color:var(--yellow);
+    color:var(--blue);
     font-size: 1.7rem;
     transition: .2s linear;
-
+    margin: 1rem;
     border: none;
     outline: none;
     border-radius: 15px;
     padding: 1em;
-    background-color: var(--blue);
+    background-color: white;
     box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
     transition: 300ms ease-in-out;
   }
   
   .contact .row .form-container input:focus, textarea:focus{
-    background-color: var(--red);
-    color: var(--yellow);
+    background-color: white;
+    color: var(--blue);
     transform: scale(1.05);
     box-shadow: 13px 13px 100px #969696,
                -13px -13px 100px #ffffff;

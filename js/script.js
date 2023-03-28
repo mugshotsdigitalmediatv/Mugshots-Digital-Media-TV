@@ -37,7 +37,7 @@ $(document).ready(function(){
   });
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwOb7MEOT-EBA9q16GIwWBz_-yfJeOZgL02Vp8cMZwbK39k3PS7vfy7lne6GHgILyBV/exec'
-  const form = document.forms['submit-to-google-sheet']
+    const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
     e.preventDefault()
@@ -45,7 +45,15 @@ $(document).ready(function(){
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
       alert("Message Sent")
-      inputs.clear()
+      document.getElementById('fullname').value = ' ';
+      document.getElementById('emailA').value = ' ';
+      document.getElementById('contactnumber').value = ' ';
+      document.getElementById('messageform').value = ' ';
+      
+      document.getElementById('fullname').placeholder = "Full Name";
+      document.getElementById('emailA').placeholder = "Email Address";
+      document.getElementById('contactnumber').placeholder = "Contact Number"; 
+      document.getElementById('messageform').placeholder = "Message";
       })
 
   
