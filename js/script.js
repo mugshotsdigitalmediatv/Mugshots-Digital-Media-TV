@@ -43,29 +43,20 @@ $(document).ready(function(){
 
    
     form.addEventListener('submit', e => { 
-      
-      if (document.getElementById('fullname').value == "" || document.getElementById('emailA').value == "" || document.getElementById('contactnumber').value == "" || document.getElementById('messageform').value == ""){
-        swal({
-          title: "Sorry!",
-          text: "Fill all the information needed!",
-          icon: "warning",
-          button: "OK",
-        });
-    }else {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
       swal({
         title: "Thank you!",
         text: "Message Successfully Sent!",
         icon: "success",
-        button: "OK",
+        button: "OK", 
       });
       document.getElementById('fullname').value = ' ';
       document.getElementById('emailA').value = ' ';
       document.getElementById('contactnumber').value = ' ';
       document.getElementById('messageform').value = ' ';
-      }})
+      })
 
   
