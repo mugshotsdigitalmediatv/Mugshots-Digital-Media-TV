@@ -436,15 +436,19 @@
           <h1 class="heading">Contact us</h1>
           <div class="row">
               <div class="image">
-                  <img src="images/cammug.gif" alt="">
+                  <img src="images/ALPHA MUGSHOT DIGITAL MEIDA TV.gif" alt="">
               </div>
               <div class="form-container">
-                  <form action="" name="submit-to-google-sheet" id="clearform">
-                    <input type="text" autocomplete="off" name="fullname" id="fullname" class="input" placeholder="Full Name">
-                    <input type="text" autocomplete="off" name="emailA" class="input" id="emailA" placeholder="Email Address">
-                    <input type="text" autocomplete="off" name="contactnumber" id="contactnumber" class="input" placeholder="Contact Number">
-                    <textarea name="messageform" id="messageform" cols="30" rows="10" placeholder="Message"></textarea>
-                    <a href="#"><button type="Submit" class="btn-submit" >Submit</button></a>
+                  <form action="" name="submit-to-google-sheet" id="submitform">
+                    <p>Full Name</p>
+                    <input type="text" autocomplete="off" name="fullname" id="fullname" class="input">
+                    <p>Email Address</p>
+                    <input type="text" autocomplete="off" name="emailA" class="input" id="emailA">
+                    <p>Contact Number</p>
+                    <input type="text" autocomplete="off" name="contactnumber" id="contactnumber" class="input">
+                    <p>Message</p>
+                    <textarea name="messageform" id="messageform" cols="30" rows="10"></textarea>
+                    <a href="#"><button type="Submit" class="btn-submit" onclick="submit">Submit</button></a>
                   </form>
                 </div>
           </div>
@@ -483,6 +487,7 @@
         </footer>
         <!--Footer End-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html> 

@@ -36,24 +36,36 @@ $(document).ready(function(){
     });
   });
 
+
+  //Backend of Contact Form
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwOb7MEOT-EBA9q16GIwWBz_-yfJeOZgL02Vp8cMZwbK39k3PS7vfy7lne6GHgILyBV/exec'
     const form = document.forms['submit-to-google-sheet']
 
-  form.addEventListener('submit', e => {
+   
+    form.addEventListener('submit', e => { 
+      
+      if (document.getElementById('fullname').value == "" || document.getElementById('emailA').value == "" || document.getElementById('contactnumber').value == "" || document.getElementById('messageform').value == ""){
+        swal({
+          title: "Sorry!",
+          text: "Fill all the information needed!",
+          icon: "warning",
+          button: "OK",
+        });
+    }else {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
-      alert("Message Sent")
+      swal({
+        title: "Thank you!",
+        text: "Message Successfully Sent!",
+        icon: "success",
+        button: "OK",
+      });
       document.getElementById('fullname').value = ' ';
       document.getElementById('emailA').value = ' ';
       document.getElementById('contactnumber').value = ' ';
       document.getElementById('messageform').value = ' ';
-      
-      document.getElementById('fullname').placeholder = "Full Name";
-      document.getElementById('emailA').placeholder = "Email Address";
-      document.getElementById('contactnumber').placeholder = "Contact Number"; 
-      document.getElementById('messageform').placeholder = "Message";
-      })
+      }})
 
   

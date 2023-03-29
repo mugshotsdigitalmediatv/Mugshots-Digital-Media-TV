@@ -456,7 +456,7 @@ header .fa-bars{
     color:var(--yellow);
   }
   .contact {
-    background: #f3ff4fd0;
+    background: rgb(0, 4, 66);
   }
   .contact .row{
     display: flex;
@@ -477,7 +477,10 @@ header .fa-bars{
     margin: 3rem;
    
   }
-  
+  .contact .row .form-container p {
+    font-size: 18px;
+    color: var(--yellow);
+  }
   .contact .row .form-container input, textarea{
     height:4rem;
     width:100%;
@@ -502,9 +505,8 @@ header .fa-bars{
     box-shadow: 13px 13px 100px #969696,
                -13px -13px 100px #ffffff;
   }
-  
   .contact .row .form-container textarea{
-    height:20rem;
+    height:13rem;
     border-radius: 1rem;
     padding:1rem; 
     resize: none;
@@ -526,6 +528,7 @@ header .fa-bars{
     color: white;
     letter-spacing: .4rem;
   }
+  
 .footer {
   background: linear-gradient(rgb(0, 4, 66),rgb(134, 0, 0));
   height: auto;
