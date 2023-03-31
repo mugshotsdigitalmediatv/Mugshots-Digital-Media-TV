@@ -57,7 +57,7 @@ $(document).ready(function(){
       document.getElementById('emailA').value = ' ';
       document.getElementById('contactnumber').value = ' ';
       document.getElementById('messageform').value = ' ';
-      return false;
+      window.location.reload();
       })
 
   
